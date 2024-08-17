@@ -14,7 +14,7 @@ A FastAPI boilerplate project designed to help you kickstart your API developmen
 1. **Clone the Repository:**
 
     ```bash
-    https://github.com/Phanith-LIM/fastapi_boilerplate.git
+    git clone https://github.com/Phanith-LIM/fastapi_boilerplate.git
     cd fastapi_boilerplate
     ```
 
@@ -39,6 +39,38 @@ A FastAPI boilerplate project designed to help you kickstart your API developmen
     ```bash
     uvicorn app.main:app --reload
     ```
+
+5. **Migrations**
+
+    - **Initialize Alembic** (if not already initialized):
+
+      ```bash
+      alembic init alembic
+      ```
+
+    - **Create a Migration Script:**
+
+      After making changes to your models, generate a new migration script:
+
+      ```bash
+      alembic revision --autogenerate -m "description of the changes"
+      ```
+
+    - **Apply Migrations:**
+
+      Apply the generated migration script to your database:
+
+      ```bash
+      alembic upgrade head
+      ```
+
+    - **Downgrade Migrations (if needed):**
+
+      If you need to revert to a previous migration, use:
+
+      ```bash
+      alembic downgrade <revision_id>
+      ```
 
 ### Contributing
 
