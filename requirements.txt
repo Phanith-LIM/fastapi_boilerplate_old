@@ -1,0 +1,12 @@
+fastapi[standard]==0.111.0
+uvicorn[standard]
+psycopg2-binary
+pydantic
+SQLAlchemy
+PyJWT
+bcrypt
+passlib[bcrypt]
+alembic
+click
+superfast-cli
+python-dotenv
