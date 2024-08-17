@@ -1,0 +1,6 @@
+# Project exclude paths
+/.venv/
+.env
+cli/build
+cli/dist
+cli/superfast_cli.egg-info
